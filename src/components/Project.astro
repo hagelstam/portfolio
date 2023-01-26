@@ -17,13 +17,18 @@ const { name, description, image, githubLink, demoLink } = Astro.props;
   </div>
   <div class="relative rounded-xl border border-neutral-800 bg-neutral-900">
     <div class="overflow-hidden rounded-t-xl">
-      <img src={image} width="960px" height="540px" />
+      <img
+        src={image}
+        alt={`${name} screenshot`}
+        width="960px"
+        height="540px"
+      />
     </div>
     <div class="p-4">
       <div class="flex justify-between">
         <h3 class="mb-2 text-xl font-semibold">{name}</h3>
         <div class="flex justify-end space-x-4">
-          <a href={githubLink} target="_blank">
+          <a href={githubLink} aria-label={`${name} github`} target="_blank">
             <svg
               width="15"
               height="15"
@@ -39,7 +44,7 @@ const { name, description, image, githubLink, demoLink } = Astro.props;
                 clip-rule="evenodd"></path>
             </svg>
           </a>
-          <a href={demoLink} target="_blank">
+          <a href={demoLink} aria-label={`${name} demo`} target="_blank">
             <svg
               width="15"
               height="15"
