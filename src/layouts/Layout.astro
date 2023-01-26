@@ -1,3 +1,8 @@
+---
+import Footer from './Footer.astro';
+import Navbar from './Navbar.astro';
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +13,17 @@
     <meta name="description" content="Maximilian Hagelstam's portfolio" />
     <title>Maximilian Hagelstam</title>
   </head>
-  <body>
-    <slot />
+  <body class="bg-black text-white">
+    <div class="flex flex-col justify-center px-8">
+      <Navbar />
+      <main>
+        <div
+          class="mx-auto flex max-w-2xl flex-col items-start justify-center pb-16"
+        >
+          <slot />
+        </div>
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>
