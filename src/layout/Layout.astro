@@ -16,7 +16,7 @@ import Navbar from './Navbar.astro';
     <title>Maximilian Hagelstam</title>
     <HeadHrefLangs />
   </head>
-  <body class="bg-black text-white">
+  <body class="bg-black text-white dark:bg-white dark:text-black">
     <div class="flex flex-col justify-center space-y-16 px-8">
       <Navbar />
       <main
@@ -26,5 +26,26 @@ import Navbar from './Navbar.astro';
       </main>
       <Footer />
     </div>
+    <script is:inline>
+      const theme = (() => {
+        if (
+          typeof localStorage !== 'undefined' &&
+          localStorage.getItem('theme')
+        ) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+      window.localStorage.setItem('theme', theme);
+    </script>
   </body>
 </html>
