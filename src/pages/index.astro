@@ -7,40 +7,36 @@ import Experience from '../components/Experience.astro';
 
 <Layout>
   <About />
-  <h3 class="mb-6 text-2xl font-bold tracking-tight md:text-4xl">Projects</h3>
-  <div class="flex flex-col gap-6 md:flex-row">
-    <Project
-      title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
+  <div>
+    <h3 class="mb-8 text-2xl font-bold tracking-tight md:text-4xl">Projects</h3>
+    <div>
+      <Project
+        name="CryptoChimp"
+        description="Simple cryptocurrency trading game. Lets you trade crypto on real market data with a starting budget of 10 000 €"
+        image="/images/cryptochimp.png"
+        githubLink="https://github.com/MaximilianHagelstam/cryptochimp"
+        demoLink="#"
+      />
+    </div>
+  </div>
+  <div>
+    <h3 class="mb-8 text-2xl font-bold tracking-tight md:text-4xl">
+      Work Experience
+    </h3>
+    <Experience
+      index="01"
+      title="Smartum - Developer Trainee"
+      duration="June 2022"
     />
-    <Project
-      title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
+    <Experience
+      index="01"
+      title="Smartum - Developer Trainee"
+      duration="June 2022"
     />
-    <Project
-      title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
+    <Experience
+      index="01"
+      title="Smartum - Developer Trainee"
+      duration="June 2022"
     />
   </div>
-
-  <h3 class="mb-4 mt-16 text-2xl font-bold tracking-tight md:text-4xl">
-    Work Experience
-  </h3>
-  <p class="mb-4 text-gray-400">
-    Build and deploy a modern SaaS application using the most popular
-    open-source software. This course is 12 hours long and is completely live
-    streamed.
-  </p>
-  <Experience
-    index="01"
-    title="Smartum - Developer Trainee"
-    duration="June 2022"
-  />
-  <Experience
-    index="01"
-    title="Smartum - Developer Trainee"
-    duration="June 2022"
-  />
-  <Experience
-    index="01"
-    title="Smartum - Developer Trainee"
-    duration="June 2022"
-  />
 </Layout>
