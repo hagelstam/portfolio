@@ -3,12 +3,14 @@ import Layout from '../layout/Layout.astro';
 import About from '../components/About.astro';
 import Project from '../components/Project.astro';
 import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+import Title from '../components/Title.astro';
 ---
 
 <Layout>
   <About />
   <section class="w-full">
-    <h3 class="mb-8 text-2xl font-bold tracking-tight md:text-4xl">Projects</h3>
+    <Title>Projects</Title>
     <div>
       <Project
         name="CryptoChimp"
@@ -20,9 +22,7 @@ import Experience from '../components/Experience.astro';
     </div>
   </section>
   <section class="w-full">
-    <h3 class="mb-8 text-2xl font-bold tracking-tight md:text-4xl">
-      Work Experience
-    </h3>
+    <Title>Work Experience</Title>
     <Experience
       duration="June 2022 - August 2022"
       title="Smartum Oy - Developer Trainee"
@@ -33,5 +33,9 @@ import Experience from '../components/Experience.astro';
       title="Freelance Developer"
       description="Wrote unit and integration tests for various frontend and backend javascript applications."
     />
+  </section>
+  <section class="w-full">
+    <Title>Skills</Title>
+    <Skills />
   </section>
 </Layout>
