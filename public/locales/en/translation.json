@@ -1,6 +1,28 @@
 {
   "about": {
-    "title": "Full stack developer",
-    "description": "I take pride in building simple, beautiful applications using modern web technologies."
+    "role": "Full stack developer",
+    "bio": "I take pride in building simple, beautiful applications using modern web technologies."
+  },
+  "projects": {
+    "title": "Projects",
+    "cryptochimp": {
+      "description": "Simple cryptocurrency trading game. Lets you trade crypto on real market data with a starting budget of 10 000 €"
+    }
+  },
+  "work": {
+    "title": "Work Experience",
+    "smartum": {
+      "title": "Smartum Oy - Developer Trainee",
+      "description": "Worked on the Smartum Plus frontend with React and Typescript.",
+      "period": "June 2022 - August 2022"
+    },
+    "freelance": {
+      "title": "Freelance Developer",
+      "description": "Wrote unit and integration tests for various frontend and backend javascript applications.",
+      "period": "March 2021 - June 2022"
+    }
+  },
+  "skills": {
+    "title": "Skills"
   }
 }

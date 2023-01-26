@@ -1,4 +1,5 @@
 ---
+import { t } from 'i18next';
 import Layout from '../layout/Layout.astro';
 import About from '../components/About.astro';
 import Project from '../components/Project.astro';
@@ -10,11 +11,11 @@ import Title from '../components/Title.astro';
 <Layout>
   <About />
   <section class="w-full">
-    <Title>Projects</Title>
+    <Title>{t('projects.title')}</Title>
     <div>
       <Project
         name="CryptoChimp"
-        description="Simple cryptocurrency trading game. Lets you trade crypto on real market data with a starting budget of 10 000 €"
+        description={t('projects.cryptochimp.description')}
         image="/images/cryptochimp.png"
         githubLink="https://github.com/MaximilianHagelstam/cryptochimp"
         demoLink="#"
@@ -22,20 +23,20 @@ import Title from '../components/Title.astro';
     </div>
   </section>
   <section class="w-full">
-    <Title>Work Experience</Title>
+    <Title>{t('work.title')}</Title>
     <Experience
-      duration="June 2022 - August 2022"
-      title="Smartum Oy - Developer Trainee"
-      description="Worked on the Smartum Plus frontend with React and Typescript."
+      title={t('work.smartum.title')}
+      description={t('work.smartum.description')}
+      period={t('work.smartum.period')}
     />
     <Experience
-      duration="March 2021 - June 2022"
-      title="Freelance Developer"
-      description="Wrote unit and integration tests for various frontend and backend javascript applications."
+      title={t('work.freelance.title')}
+      description={t('work.freelance.description')}
+      period={t('work.freelance.period')}
     />
   </section>
   <section class="w-full">
-    <Title>Skills</Title>
+    <Title>{t('skills.title')}</Title>
     <Skills />
   </section>
 </Layout>

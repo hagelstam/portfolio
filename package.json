@@ -8,7 +8,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write .",
+    "i18n": "astro-i18next generate"
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.0.0",

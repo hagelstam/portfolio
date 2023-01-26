@@ -1,6 +1,28 @@
 {
   "about": {
-    "title": "Full stack utvecklare",
-    "description": "Jag är stolt över att bygga enkla, vackra applikationer med modern webbteknologi."
+    "role": "Full stack utvecklare",
+    "bio": "Jag är stolt över att bygga enkla, vackra applikationer med moderna webbteknologier."
+  },
+  "projects": {
+    "title": "Projekt",
+    "cryptochimp": {
+      "description": "Enkelt spel för handel med kryptovalutor. Låter dig handla krypto på verklig marknadsdata med en startbudget på 10 000 €"
+    }
+  },
+  "work": {
+    "title": "Arbetserfarenhet",
+    "smartum": {
+      "title": "Smartum Oy - Developer Trainee",
+      "description": "Arbetade på Smartum Plus frontend med React och Typescript.",
+      "period": "Juni 2022 - Augusti 2022"
+    },
+    "freelance": {
+      "title": "Freelance Utvecklare",
+      "description": "Skrev unit- och integrationstester för olika frontend och backend javascript applikationer.",
+      "period": "Mars 2021 - Juni 2022"
+    }
+  },
+  "skills": {
+    "title": "Kunskaper"
   }
 }
