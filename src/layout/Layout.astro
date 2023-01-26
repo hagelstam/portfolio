@@ -1,10 +1,12 @@
 ---
+import i18next from 'i18next';
+import { HeadHrefLangs } from 'astro-i18next/components';
 import Footer from './Footer.astro';
 import Navbar from './Navbar.astro';
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={i18next.language}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -12,6 +14,7 @@ import Navbar from './Navbar.astro';
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Maximilian Hagelstam's portfolio" />
     <title>Maximilian Hagelstam</title>
+    <HeadHrefLangs />
   </head>
   <body class="bg-black text-white">
     <div class="flex flex-col justify-center px-8">
