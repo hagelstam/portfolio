@@ -3,6 +3,12 @@ import i18next from 'i18next';
 import { HeadHrefLangs } from 'astro-i18next/components';
 import Footer from './Footer.astro';
 import Navbar from './Navbar.astro';
+
+const meta = {
+  title: 'Maximilian Hagelstam',
+  description: 'Full stack developer, Typescript and React enthusiast.',
+  image: '/images/avatar.png',
+};
 ---
 
 <!DOCTYPE html>
@@ -10,10 +16,19 @@ import Navbar from './Navbar.astro';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Maximilian Hagelstam's portfolio" />
-    <title>Maximilian Hagelstam</title>
+    <title>{meta.title}</title>
+
+    <meta itemprop="name" content={meta.title} />
+    <meta itemprop="description" content={meta.description} />
+    <meta itemprop="image" content={meta.image} />
+    <meta name="description" content={meta.description} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:image" content={meta.image} />
+    <meta property="og:type" content="website" />
+
     <HeadHrefLangs />
   </head>
   <body class="bg-white text-black dark:bg-black dark:text-white">
