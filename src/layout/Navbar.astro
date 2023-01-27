@@ -6,23 +6,23 @@ import ThemeToggle from '../components/ThemeToggle';
 <nav
   class="relative mx-auto flex w-full max-w-2xl items-center justify-between pt-8"
 >
-  <div>
+  <div class="flex flex-row space-x-4">
     <a
-      class="font-normal text-neutral-400 transition-all hover:text-white"
+      class="font-normal text-neutral-600 transition-all hover:text-black dark:text-neutral-400 dark:hover:text-white"
       href="https://github.com/MaximilianHagelstam"
       target="_blank"
     >
       GitHub
     </a>
     <a
-      class="ml-4 font-normal text-neutral-400 transition-all hover:text-white"
+      class="font-normal text-neutral-600 transition-all hover:text-black dark:text-neutral-400 dark:hover:text-white"
       href="https://www.linkedin.com/in/maximilian-hagelstam-704840186/"
       target="_blank"
     >
       LinkedIn
     </a>
     <a
-      class="ml-4 font-normal text-neutral-400 transition-all hover:text-white"
+      class="font-normal text-neutral-600 transition-all hover:text-black dark:text-neutral-400 dark:hover:text-white"
       href="https://www.dropbox.com/s/rxt4m54w0nmui8a/resume.pdf"
       target="_blank"
     >
@@ -30,7 +30,7 @@ import ThemeToggle from '../components/ThemeToggle';
     </a>
   </div>
   <div class="flex justify-end">
-    <LanguageSelector class="bg-black text-white" />
+    <LanguageSelector class="dark:bg-black dark:text-white rounded-md" />
     <ThemeToggle client:visible />
   </div>
 </nav>

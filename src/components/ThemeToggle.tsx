@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'dark');
 
   const handleClick = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
@@ -20,7 +20,7 @@ export default function ThemeToggle() {
     <button
       onClick={handleClick}
       aria-label="change theme"
-      class="ml-4 flex items-center justify-center rounded-lg p-2 transition-all hover:bg-white hover:bg-opacity-10"
+      class="ml-4 flex items-center justify-center rounded-lg p-2 transition-all hover:bg-neutral-100 dark:hover:bg-neutral-900"
     >
       {theme === 'light' ? (
         <svg
