@@ -1,18 +1,16 @@
 ---
-import i18next from 'i18next';
-import { HeadHrefLangs } from 'astro-i18next/components';
 import Footer from './Footer.astro';
 import Navbar from './Navbar.astro';
 
 const meta = {
   title: 'Maximilian Hagelstam',
-  description: 'Full stack developer, Typescript and React enthusiast.',
+  description: 'Frontend developer, React and TypeScript enthusiast.',
   image: '/images/avatar.png',
 };
 ---
 
 <!DOCTYPE html>
-<html lang={i18next.language}>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -28,8 +26,6 @@ const meta = {
     <meta property="og:description" content={meta.description} />
     <meta property="og:image" content={meta.image} />
     <meta property="og:type" content="website" />
-
-    <HeadHrefLangs />
   </head>
   <body class="bg-white text-black dark:bg-black dark:text-white">
     <div class="flex flex-col justify-center space-y-16 px-8">
