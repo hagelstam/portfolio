@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-### Tech Stack
+### Tech stack
 
 - [Astro](https://astro.build/)
 - [Tailwind CSS](https://tailwindcss.com)

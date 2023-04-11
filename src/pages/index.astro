@@ -11,13 +11,69 @@ import Title from '../components/Title.astro';
   <About />
   <section class="w-full">
     <Title>Projects</Title>
-    <Project
-      name="CryptoChimp"
-      description="Simple cryptocurrency trading game. Lets you trade crypto on real market data with a starting budget of 10 000 €"
-      image="/images/cryptochimp.png"
-      githubLink="https://github.com/MaximilianHagelstam/cryptochimp"
-      demoLink="https://cryptochimp.vercel.app"
-    />
+    <div class="flex flex-col space-y-12">
+      <Project
+        name="CryptoChimp"
+        description="Cryptocurrency trading game. Lets you trade crypto on real market data with a starting budget of 10 000 €"
+        image="/images/cryptochimp.png"
+        githubLink="https://github.com/MaximilianHagelstam/cryptochimp"
+        demoLink="https://cryptochimp.vercel.app"
+      >
+        <div class="mb-3">
+          <span
+            class="mr-2 inline-flex rounded-full bg-fuchsia-50 px-2 text-xs leading-5 text-fuchsia-800 dark:bg-fuchsia-800 dark:text-fuchsia-50"
+          >
+            Next.js
+          </span>
+          <span
+            class="mr-2 inline-flex rounded-full bg-cyan-50 px-2 text-xs leading-5 text-cyan-800 dark:bg-cyan-800 dark:text-cyan-50"
+          >
+            Tailwind CSS
+          </span>
+          <span
+            class="mr-2 inline-flex rounded-full bg-blue-100 px-2 text-xs leading-5 text-purple-800 dark:bg-purple-800 dark:text-blue-100"
+          >
+            PlanetScale
+          </span>
+          <span
+            class="mr-2 inline-flex rounded-full bg-emerald-50 px-2 text-xs leading-5 text-emerald-800 dark:bg-emerald-800 dark:text-emerald-50"
+          >
+            Prisma
+          </span>
+        </div>
+      </Project>
+      <Project
+        name="Baynet"
+        description="Social media platform for artists to create and share original drawings. Create and share art with the community."
+        image="/images/baynet.png"
+        githubLink="https://github.com/WilliamTuominiemi/NFT-Art-Platform"
+        demoLink="https://baynet.vercel.app"
+        isBaynet
+      >
+        <div class="mb-3">
+          <span
+            class="mr-2 inline-flex rounded-full bg-fuchsia-50 px-2 text-xs leading-5 text-fuchsia-800 dark:bg-fuchsia-800 dark:text-fuchsia-50"
+          >
+            Next.js
+          </span>
+          <span
+            class="mr-2 inline-flex rounded-full bg-cyan-50 px-2 text-xs leading-5 text-cyan-800 dark:bg-cyan-800 dark:text-cyan-50"
+          >
+            Tailwind CSS
+          </span>
+          <span
+            class="mr-2 inline-flex rounded-full bg-slate-50 px-2 text-xs leading-5 text-slate-800 dark:bg-slate-800 dark:text-slate-50"
+          >
+            MySQL
+          </span>
+          <span
+            class="mr-2 inline-flex rounded-full bg-blue-50 px-2 text-xs leading-5 text-blue-800 dark:bg-blue-800 dark:text-blue-50"
+          >
+            tRPC
+          </span>
+        </div>
+      </Project>
+    </div>
   </section>
   <section class="w-full">
     <Title>Work Experience</Title>

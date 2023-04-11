@@ -5,14 +5,24 @@ export interface Props {
   image: string;
   githubLink: string;
   demoLink: string;
+  isBaynet?: boolean;
 }
 
-const { name, description, image, githubLink, demoLink } = Astro.props;
+const {
+  name,
+  description,
+  image,
+  githubLink,
+  demoLink,
+  isBaynet = false,
+} = Astro.props;
 ---
 
 <div class="group relative">
   <div
-    class="animate-tilt absolute -inset-0.5 rounded-xl bg-gradient-to-r from-[#fff7ec] to-[#a085c8] opacity-0 blur-2xl transition duration-1000 group-hover:opacity-75 group-hover:duration-500"
+    class={`animate-tilt absolute -inset-0.5 rounded-xl bg-gradient-to-r ${
+      !isBaynet ? 'from-[#fff7ec] to-[#a085c8]' : 'from-[#6350DA] to-[#56CDA9]'
+    } opacity-0 blur-2xl transition duration-1000 group-hover:opacity-75 group-hover:duration-500`}
   >
   </div>
   <div
@@ -68,23 +78,7 @@ const { name, description, image, githubLink, demoLink } = Astro.props;
           </a>
         </div>
       </div>
-      <div class="mb-3">
-        <span
-          class="mr-2 inline-flex rounded-full bg-indigo-100 px-2 text-xs leading-5 text-blue-800 dark:bg-blue-800 dark:text-indigo-100"
-        >
-          Next.js
-        </span>
-        <span
-          class="mr-2 inline-flex rounded-full bg-cyan-100 px-2 text-xs leading-5 text-cyan-800 dark:bg-cyan-800 dark:text-cyan-100"
-        >
-          Tailwind CSS
-        </span>
-        <span
-          class="mr-2 inline-flex rounded-full bg-blue-100 px-2 text-xs leading-5 text-purple-800 dark:bg-purple-800 dark:text-blue-100"
-        >
-          PlanetScale
-        </span>
-      </div>
+      <slot />
       <p class="mb-4 w-3/4 text-neutral-600 dark:text-neutral-400">
         {description}
       </p>
