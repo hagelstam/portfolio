@@ -1,27 +1,25 @@
 ---
+import clsx from 'clsx';
+
 export interface Props {
   title: string;
-  description: string;
   period: string;
+  border?: string;
 }
 
-const { title, description, period } = Astro.props;
+const { title, period, border } = Astro.props;
 ---
 
-<div class="w-full border-b border-neutral-200 py-4 dark:border-neutral-800">
-  <div class="flex flex-col justify-between sm:flex-row">
-    <div class="flex w-full flex-col justify-start sm:w-2/3">
-      <h4
-        class="next-neutral-900 mb-2 text-lg font-medium dark:text-neutral-100"
-      >
-        {title}
-      </h4>
-      <p class="text-neutral-600 dark:text-neutral-400">
-        {description}
-      </p>
-    </div>
-    <div class="mt-4 w-full text-neutral-500 sm:mt-0 sm:w-1/3">
-      {period}
-    </div>
+<div
+  class={clsx(
+    'flex w-full justify-between border-neutral-200 py-4 text-center dark:border-neutral-800',
+    border,
+  )}
+>
+  <h4 class="next-neutral-900 mb-2 text-lg font-medium dark:text-neutral-100">
+    {title}
+  </h4>
+  <div class="text-neutral-500">
+    {period}
   </div>
 </div>

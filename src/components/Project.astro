@@ -1,28 +1,25 @@
 ---
+import clsx from 'clsx';
+
 export interface Props {
   name: string;
   description: string;
   image: string;
   githubLink: string;
   demoLink: string;
-  isBaynet?: boolean;
+  gradient: string;
 }
 
-const {
-  name,
-  description,
-  image,
-  githubLink,
-  demoLink,
-  isBaynet = false,
-} = Astro.props;
+const { name, description, image, githubLink, demoLink, gradient } =
+  Astro.props;
 ---
 
 <div class="group relative">
   <div
-    class={`animate-tilt absolute -inset-0.5 rounded-xl bg-gradient-to-r ${
-      !isBaynet ? 'from-[#fff7ec] to-[#a085c8]' : 'from-[#6350DA] to-[#56CDA9]'
-    } opacity-0 blur-2xl transition duration-1000 group-hover:opacity-75 group-hover:duration-500`}
+    class={clsx(
+      'animate-tilt absolute -inset-0.5 rounded-xl bg-gradient-to-r opacity-0 blur-2xl transition duration-1000 group-hover:opacity-75 group-hover:duration-500',
+      gradient,
+    )}
   >
   </div>
   <div

@@ -3,7 +3,6 @@ import Layout from '../layout/Layout.astro';
 import About from '../components/About.astro';
 import Project from '../components/Project.astro';
 import Experience from '../components/Experience.astro';
-import Skills from '../components/Skills.astro';
 import Title from '../components/Title.astro';
 ---
 
@@ -15,9 +14,10 @@ import Title from '../components/Title.astro';
       <Project
         name="CryptoChimp"
         description="Cryptocurrency trading game. Lets you trade crypto on real market data with a starting budget of 10 000 €"
-        image="/images/cryptochimp.png"
+        image="https://raw.githubusercontent.com/MaximilianHagelstam/cryptochimp/main/screenshot.png"
         githubLink="https://github.com/MaximilianHagelstam/cryptochimp"
         demoLink="https://cryptochimp.vercel.app"
+        gradient="from-[#fff7ec] to-[#a085c8]"
       >
         <div class="mb-3">
           <span
@@ -45,10 +45,10 @@ import Title from '../components/Title.astro';
       <Project
         name="Baynet"
         description="Social media platform for artists to create and share original drawings with the community."
-        image="/images/baynet.png"
+        image="https://raw.githubusercontent.com/WilliamTuominiemi/NFT-Art-Platform/main/screenshot.png"
         githubLink="https://github.com/WilliamTuominiemi/NFT-Art-Platform"
         demoLink="https://baynet.vercel.app"
-        isBaynet
+        gradient="from-[#6350DA] to-[#56CDA9]"
       >
         <div class="mb-3">
           <span
@@ -77,24 +77,21 @@ import Title from '../components/Title.astro';
   </section>
   <section class="w-full">
     <Title>Work Experience</Title>
-    <Experience
-      title="Smartum Oy - Developer Trainee"
-      description="Worked on the new Health Benefit and refactored the admin tool."
-      period="March 2023 - July 2023"
-    />
-    <Experience
-      title="Smartum Oy - Developer Trainee"
-      description="Helped get Smartum Plus 2.0 production ready and released."
-      period="June 2022 - August 2022"
-    />
-    <Experience
-      title="Freelance Developer"
-      description="Wrote unit and integration tests for various frontend and backend javascript applications."
-      period="March 2021 - June 2022"
-    />
-  </section>
-  <section class="w-full">
-    <Title>Skills</Title>
-    <Skills />
+    <div class="flex w-full flex-col space-y-4">
+      <Experience
+        title="Smartum Oy - Developer Trainee"
+        period="March 2023 - July 2023"
+      />
+      <Experience
+        title="Smartum Oy - Developer Trainee"
+        period="June 2022 - August 2022"
+        border="border-t"
+      />
+      <Experience
+        title="Freelance Developer"
+        period="March 2021 - June 2022"
+        border="border-t"
+      />
+    </div>
   </section>
 </Layout>

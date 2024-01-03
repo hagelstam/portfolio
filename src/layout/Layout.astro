@@ -4,12 +4,12 @@ import Navbar from './Navbar.astro';
 
 const meta = {
   title: 'Maximilian Hagelstam',
-  description: 'Software Developer, React and TypeScript enthusiast',
-  image: '/images/avatar.png',
+  description: 'Software Developer',
+  image: 'https://avatars.githubusercontent.com/u/49094247?v=4',
 };
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,6 @@ const meta = {
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{meta.title}</title>
-
     <meta itemprop="name" content={meta.title} />
     <meta itemprop="description" content={meta.description} />
     <meta itemprop="image" content={meta.image} />
