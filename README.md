@@ -1,16 +1,13 @@
 # Portfolio
 
-### Run locally
+## Get started
 
 ```bash
-git clone https://github.com/MaximilianHagelstam/portfolio
-cd portfolio
-
-npm install
-npm run dev
+pnpm install
+pnpm start
 ```
 
-### Tech stack
+## Tech stack
 
 - [Astro](https://astro.build/)
-- [Tailwind CSS](https://tailwindcss.com)
+- [Tailwind CSS](https://tailwindcss.com/)
