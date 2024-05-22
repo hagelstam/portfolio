@@ -10,9 +10,9 @@
     "lint": "astro check && prettier --check ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
+    "@astrojs/check": "^0.7.0",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.7.0",
+    "astro": "^4.8.7",
     "clsx": "^2.1.1"
   },
   "devDependencies": {
