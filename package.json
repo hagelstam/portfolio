@@ -7,19 +7,19 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "lint": "astro check && prettier --check ."
+    "lint": "astro check && prettier --check '**/*.{ts,tsx,astro,json,cjs}'"
   },
   "dependencies": {
-    "@astrojs/check": "^0.8.2",
+    "@astrojs/check": "^0.9.2",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.12.2",
+    "astro": "^4.13.2",
     "clsx": "^2.1.1"
   },
   "devDependencies": {
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.6",
+    "tailwindcss": "^3.4.9",
     "typescript": "^5.5.4"
   }
 }
