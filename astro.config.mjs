@@ -11,7 +11,7 @@ export default defineConfig({
   output: 'static',
   adapter: vercelStatic({
     webAnalytics: {
-      enabled: true,
+      enabled: false,
     },
   }),
 });

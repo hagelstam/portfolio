@@ -1,5 +1,4 @@
 ---
-import Analytics from '@vercel/analytics/astro';
 import '../styles/global.css';
 import Footer from './Footer.astro';
 import Navbar from './Navbar.astro';
@@ -29,7 +28,6 @@ const meta = {
     <meta property="og:type" content="website" />
   </head>
   <body class="bg-white text-black dark:bg-black dark:text-white">
-    <Analytics />
     <div class="flex flex-col justify-center space-y-16 px-8">
       <Navbar />
       <main
