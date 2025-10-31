@@ -1,6 +1,6 @@
 # Portfolio
 
-My personal portfolio. Built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Personal portfolio built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Get started
 
